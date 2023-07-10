@@ -1,0 +1,64 @@
+
+.footer {
+    margin-top: 12%;
+    text-align: center;
+}
+.footer__copyRight {
+    display: block;
+    font-size: 12px;
+    margin-top: 40px;
+}
+.footer__contact {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.footer .shareLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.footer .shareLists>li {
+    width: 70px;
+    height: 70px;
+    margin: 0 16px;
+}
+.footer .shareLists>li>a {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+.hd {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.footer .shareLists>li.shareLists--fb>a {
+    background-image: url(https://spy-family.net/assets/img/common/sns_fb_b.svg);
+}
+.footer .shareLists>li.shareLists--line>a {
+    background-image: url(https://spy-family.net/assets/img/common/sns_line_b.svg);
+}
+.footer .shareLists>li.shareLists--tw>a {
+    background-image: url(https://spy-family.net/assets/img/common/sns_tw_b.svg);
+}
+.bnrLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.bnrLists>li {
+    margin: 4px;
+}

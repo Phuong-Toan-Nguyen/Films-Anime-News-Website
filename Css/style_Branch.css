@@ -1,0 +1,31 @@
+.border_top{
+    border-top: 1px solid black;
+    margin-top: 40px;
+}
+
+.color_red{
+    color: #8d0000;
+}
+
+.font_content{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.font_text {
+    color: black;
+    font-size: 20px;
+}
+
+.margin_top{
+    margin-top: 40px;
+}
+
+.img_, iframe{
+    margin: 40px 0 40px 0;
+}
+
+.bold{
+    font-weight: bold;
+}

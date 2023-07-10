@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style_music.css">
+    <link rel="stylesheet" href="Css/styleFooter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="BootStrap/js/bootstrap.js"></script>    
+</head> 
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!--Menu-->
+            <header class="menu col-md-2 col-sm-2">
+                <!--code đổi theme và background menu-->
+                <script>
+                    $(document).ready(function(){
+                    var theme = $(".menu");
+                    var themeContent = $(".content");
+                    var colorMenu = ['#ffc66b','#697d73'];
+                    var colorContent = ['#fcddab','#8ea99b'];
+                    const MenuImage = [
+                        'url("char1.png")',
+                        'url("char2.png")',
+                        'url("char3.png")',
+                        'url("char4.png")',
+                        'url("char5.png")',
+                        'url("char6.png")',
+                    ]
+                    
+                    var i = 0;
+                    
+                    function ChangeColor(){
+                        theme.css('background-color', colorMenu[i]);
+                        themeContent.css('background-color', colorContent[i]);
+                        i++;
+                        if(i>=colorMenu.length)
+                        i = 0;
+                        /*đổi màu theme*/
+                        var pickImage = MenuImage[ Math.floor(Math.random() * MenuImage.length) ];
+                        $(document).ready(function(){
+                            $(".MenuBackground").css("background-image",pickImage);/*đổi background menu ở đây*/
+                        });
+                       
+                    }
+                    setInterval(ChangeColor,20000);/*đổi thời gian chuyển theme ở đây*/
+                    
+                    })
+                </script>
+                <nav class="container-config">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <p class="Menulogo"><img src="image/fv_logo.png" alt="SPYxFAMILY spy family"></p>
+                        </div>
+                        <ul class="col-md-12 col-xs-12" style="list-style-type: none;">
+                            <li class="listHead font-Oswald">
+                                <a href="#tTop"><!--i wonder should i add a back to top button here ?-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tNews" class="listHead font-Oswald">NEWS</a>
+                            </li>
+                            <li >
+                                <a href="Do_An_Web.html#tOnAir" class="listHead font-Oswald">ON AIR</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tStory" class="listHead font-Oswald">STORY</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tStaff" class="listHead font-Oswald">STAFF&CAST</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tTrailers" class="listHead font-Oswald">TRAILERS</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tMusic" class="listHead font-Oswald">MUSIC</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tBlu"  class="listHead font-Oswald">Blu-ray & DVD</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tSpecial"  class="listHead font-Oswald">SPECIAL</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tGoods"  class="listHead font-Oswald">GOODS</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tPodcast"  class="listHead font-Oswald">PODCAST</a>
+                            </li>
+                            <li>
+                                <a href="https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-882011-8"  class="listHead font-Oswald" target="_blank">COMICS</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/spyfamily_anime" target="_blank" class="listHead font-Oswald">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://page.line.me/188qqtda?openQrModal=true" target="_blank" class="listHead font-Oswald">LINE</a>                                
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/spy_family_official/" target="_blank" class="listHead font-Oswald">Instagram</a>  
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="MenuBackground"></div>
+
+            </header>
+
+            <!--Content-->
+            <div class="content col-md-10 col-sm-10 col-xs-12">
+                <div class="container">
+                    <h1 class="content-title font-Oswald">
+                        MUSIC
+                    </h1>
+                    <div class="contentDIV">
+                        <div class="content">
+                            <h2 class="content_item font-Oswald">
+                                <span class="content_item_date">ORIGINAL SOUND TRACK</span>
+                                <span class="content_item_text">TVアニメ『SPYxFAMILY』オリジナル･サウンドトラック</span>
+                            </h2>
+                            <div class="content_text">
+                                <p>
+                                    <img src="image/ost_jk.jpg">
+                                </p>
+                                <p class="profile" style="text-align:center; font-weight:bold;">
+                                    <img src="image/tokuten.png">
+                                    <br><br>
+                                    ▼配信サイトUR
+                                    <br>
+                                    URL: <a href="https://bumpofchicken.lnk.to/souvenir" target="_blank" style="color: black;">https://bumpofchicken.lnk.to/souvenir</a>
+                                        
+                                </p>
+                                <p class="comment font-Oswald">【コメント】<br>
+                                    <span class="commentC">●エンディング主題歌を担当されると決まった時の感想を教えてください。</span><br>
+                                    オファーをいただいた時、ちょうど原作を読み終えたタイミングだったので運命のように感じました。とても楽しく読んでいたので、この作品のエンディング主題歌を作れることがすごく楽しみでした。<br><br>
+                                    <span class="commentC">●原作漫画「SPYxFAMILY」を読んだ感想をお聞かせください。</span><br>
+                                    この「家族構成」そのものが素晴らしい発想だと思いました。武力を持っているがお互いに何も知らない黄昏とヨル、そして武力はないが物語を進める力を持ち、二人の秘密すべてを知っているアーニャ、というバランスが最高ですよね。すごくシリアスな物語になってもおかしくない設定を持つ作品だと思いますが、“喜劇”や“コメディ”として楽しめる所がとても好きでした。<br><br>
+                                    <span class="commentC">●曲名や楽曲に込めた想いを教えてください。</span><br>
+                                    「家族をテーマに」と、制作の方にメッセージをいただいたので、物語が持つ家族感を意識しながら、自分の考える家族像を歌にしました。以前、同じテーマで「Family Song」という楽曲を作ったことがありましたが、今回の「喜劇」という楽曲では、また全く違うものができたと思います。<br><br>
+                                    <span class="commentC">●アニメを楽しみにしている方にメッセージをお願いします。</span><br>
+                                    「SPYxFAMILY」のアニメーション世界を彩ることができてとても嬉しいです。一生懸命作りましたので、ぜひエンディングや“喜劇”という楽曲も、隅々まで楽しんで頂けたらと思います。
+                                </p>
+                                <p class="profile font-Oswald">【プロフィール】<br>
+                                    1981年、埼玉県生まれ。音楽家・俳優・文筆家。<br>
+                                    2010年に1stアルバム『ばかのうた』にてソロデビュー。2016年10月にリリースしたシングル『恋』は、自身も出演したドラマ『逃げるは恥だが役に立つ』の主題歌として社会現象となった。2021年６月、ドラマ『着飾る恋には理由があって』の主題歌を収録したシングルパッケージ『不思議／創造』をリリースし、Billboard JAPAN 総合ソング・チャート“JAPAN HOT 100”で「不思議」が１位を獲得するなど大ヒットを記録した。俳優として数々の映画・ドラマに出演し、第37回日本アカデミー賞新人俳優賞など多数の映画賞を受賞。
+                                </p>
+                            </div>
+                        </div>
+                        <a href="Do_An_Web.html#tMusic" class="LinkToMoreNews">BACK</a>
+                    </div>
+                    <footer class="footer">
+                        <p class="footer__logo">
+                            <a href=""><img src="image/fv_logo.png" alt="SPYxFAMILY"></a>
+                        </p>
+                        <small class="footer__copyRight">©遠藤達哉/集英社・SPYxFAMILY製作委員会</small>
+                        <p class="footer__contact">
+                            <a href="" target="_blank">【 お問い合せ 】</a>
+                        </p>
+                        <ul class="shareLists">
+                            <li class="shareLists--tw">
+                                <a href="https://twitter.com/share?url=https://spy-family.net/&amp;text=TVアニメ『SPYxFAMILY』&amp;hashtags=" onclick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
+                                    <span class="hd">Twitter share</span>
+                                </a>
+                            </li>
+                            <li class="shareLists--fb">
+                                <a href="https://www.facebook.com/share.php?u=https://spy-family.net/" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+                                    <span class="hd">Facebook share</span>
+                                </a>
+                            </li>
+                            <li class="shareLists--line">
+                                <a href="https://line.me/R/msg/text/?TVアニメ『SPYxFAMILY』 https://spy-family.net/" onclick="window.open(encodeURI(decodeURI(this.href)), 'linewindow', 'width=550, height=520, personalbar=0,toolbar=0, scrollbars=1, resizable=1'); return false;" target="_blank">
+                                    <span class="hd">LINE share</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="bnrLists">
+                            <li>
+                                <a href="https://www.tohostage.com/spy-family/" target="_blank"><img src="image/footer_bnr4.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://shonenjumpplus.com/" target="_blank"><img src="image/footer_bnr1.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.witstudio.co.jp/" target="_blank"><img src="image/footer_bnr2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://cloverworks.co.jp/" target="_blank"><img src="image/footer_bnr3.jpg" alt=""></a>
+                            </li>
+                            </ul>
+                      </footer>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+</body>
+</html>

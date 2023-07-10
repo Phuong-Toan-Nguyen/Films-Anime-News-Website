@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/styleFooter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="BootStrap/js/bootstrap.js"></script>    
+</head> 
+
+<body>
+    
+    <header>
+        <div class="container-fluid-config">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <!--Carousel-->
+                    <div id="carousel-Header" class="carousel slide" data-ride="carousel" >
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-Header" data-slide-to="0" class="active"></li>      
+                            <li data-target="#carousel-Header" data-slide-to="1"></li>
+                            <li data-target="#carousel-Header" data-slide-to="2"></li>
+                            <li data-target="#carousel-Header" data-slide-to="3"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                    
+                        <div class="carousel-inner"><!--img 1200x630-->
+                            <div class="item active">
+                                <img src="image/SpyFamily.jpg" alt="..." class="carousel-img">
+                                <div class="carousel-caption">      
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="item">        
+                                <img src="image/OnePieceRed1.jpg" alt="..." class="carousel-img">        
+                                <div class="carousel-caption">        
+                                        
+                                </div>        
+                            </div>
+                        
+                            <div class="item">        
+                                <img src="image/WitchFromMercury.png" alt="..." class="carousel-img">        
+                                <div class="carousel-caption">        
+                                        
+                                </div>        
+                            </div>       
+
+                             <div class="item">        
+                                <img src="image/KazueMovie.jpg" alt="..." class="carousel-img">        
+                                <div class="carousel-caption">        
+                                        
+                                </div>        
+                            </div>       
+
+                        </div>
+                        
+                        <!-- Left Right Controls -->
+                    
+                        <a class="left carousel-control" href="#carousel-Header" role="button" data-slide="prev">        
+                            <span class="glyphicon glyphicon-chevron-left"></span>        
+                        </a>
+                    
+                        <a class="right carousel-control" href="#carousel-Header" role="button" data-slide="next">        
+                            <span class="glyphicon glyphicon-chevron-right"></span>        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--Menu-->
+            <header class="menu col-md-2 col-sm-2">
+                <!--code đổi theme và background menu-->
+                <script>
+                    $(document).ready(function(){
+                    var theme = $(".menu");
+                    var themeContent = $(".content");
+                    var colorMenu = ['#ffc66b','#697d73'];
+                    var colorContent = ['#fcddab','#8ea99b'];
+                    const MenuImage = [
+                        'url("char1.png")',
+                        'url("char2.png")',
+                        'url("char3.png")',
+                        'url("char4.png")',
+                        'url("char5.png")',
+                        'url("char6.png")',
+                    ]
+                    
+                    var i = 0;
+                    
+                    function ChangeColor(){
+                        theme.css('background-color', colorMenu[i]);
+                        themeContent.css('background-color', colorContent[i]);
+                        i++;
+                        if(i>=colorMenu.length)
+                        i = 0;
+                        /*đổi màu theme*/
+                        var pickImage = MenuImage[ Math.floor(Math.random() * MenuImage.length) ];
+                        $(document).ready(function(){
+                            $(".MenuBackground").css("background-image",pickImage);/*đổi background menu ở đây*/
+                        });
+                       
+                    }
+                    setInterval(ChangeColor,20000);/*đổi thời gian chuyển theme ở đây*/
+                    
+                    })
+                </script>
+                <nav class="container-config">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <p class="Menulogo"><img src="image/fv_logo.png" alt="SPYxFAMILY spy family"></p>
+                        </div>
+                        <ul class="col-md-12 col-xs-12" style="list-style-type: none;">
+                            <li class="listHead font-Oswald">
+                                <a href="#tTop"><!--i wonder should i add a back to top button here ?-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tNews" class="listHead font-Oswald">NEWS</a>
+                            </li>
+                            <li >
+                                <a href="#tOnAir" class="listHead font-Oswald">ON AIR</a>
+                            </li>
+                            <li>
+                                <a href="#tStory" class="listHead font-Oswald">STORY</a>
+                            </li>
+                            <li>
+                                <a href="#tStaff" class="listHead font-Oswald">STAFF&CAST</a>
+                            </li>
+                            <li>
+                                <a href="#tTrailers" class="listHead font-Oswald">TRAILERS</a>
+                            </li>
+                            <li>
+                                <a href="#tMusic" class="listHead font-Oswald">MUSIC</a>
+                            </li>
+                            <li>
+                                <a href="#tBlu"  class="listHead font-Oswald">Blu-ray & DVD</a>
+                            </li>
+                            <li>
+                                <a href="#tSpecial"  class="listHead font-Oswald">SPECIAL</a>
+                            </li>
+                            <li>
+                                <a href="#tGoods"  class="listHead font-Oswald">GOODS</a>
+                            </li>
+                            <li>
+                                <a href="#tPodcast"  class="listHead font-Oswald">PODCAST</a>
+                            </li>
+                            <li>
+                                <a href="https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-882011-8"  class="listHead font-Oswald" target="_blank">COMICS</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/spyfamily_anime" target="_blank" class="listHead font-Oswald">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://page.line.me/188qqtda?openQrModal=true" target="_blank" class="listHead font-Oswald">LINE</a>                                
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/spy_family_official/" target="_blank" class="listHead font-Oswald">Instagram</a>  
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="MenuBackground"></div>
+
+
+            </header>
+
+            <!--Content-->
+            <div class="content col-md-10 col-sm-10 col-xs-12">
+                <div class="container">
+            
+                    <div id="tNews">
+                        <h2 class="content-title font-Oswald">NEWS</h2>
+                        <ul class="tNewsList"> 
+                            <li class="tNewsList-items">
+                                <a href="New_2022.11.26.html" class="tNews-link">
+                                    <p class="tNewsList-date font-Oswald">
+                                        <time datetime="2022-11-26">2022.11.26</time>
+                                    </p>
+                                    <img src="image/newsImage1.jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        MISSION:21 <夜帷> はじめての嫉妬」ビジュアル公開！
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tNewsList-items">
+                                <a href="New_2022.11.25.html" class="tNews-link">
+                                    <p class="tNewsList-date font-Oswald">
+                                        <time datetime="2022-11-25">2022.11.25</time>
+                                    </p>
+                                    <img src="image/news2.jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        MISSION:21 <夜帷> はじめての嫉妬」次回予告公開！！
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tNewsList-items">
+                                <a href="New_2022.11.24.html" class="tNews-link">
+                                    <p class="tNewsList-date font-Oswald">
+                                        <time datetime="2022-11-24">2022.11.24</time>
+                                    </p>
+                                    <img src="image/news4.jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        ついに「Prime Video」にて世界独占配信開始!<br>
+                                        <small>配信を記念して、西島秀俊演じる南光太郎、中村倫也演じる秋月信彦の特別ビジュアルを公開！！ </small>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tNewsList-items">
+                                <a href="New_2022.11.20.html" class="tNews-link">
+                                    <p class="tNewsList-date font-Oswald">
+                                        <time datetime="2022-11-20">2022.11.20</time>
+                                    </p>
+                                    <img src="image/news3.jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        GALLERY: コンセプトビジュアル　公開❣　
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="tNews-more font-Oswald">
+                            <a href="#" class="LinkToMoreNews">MORE NEWS</a><!--thêm link more news chỗ này-->
+                        </p>
+                    </div>
+                    <div id="tOnAir">
+                        <h2 class="content-title font-Oswald">ON AIR</h2>
+                        <ul class="tOnAirList">
+                            <li class="row tOnAirList-items">
+                                <div class="col-md-5">スパイファミリー MISSION:22</div>
+                                <div class="col-md-3">12月10日(土)</div>
+                                <div class="col-md-4">土曜日 23:00~23:30</div>
+                            </li>
+                            <li class="row tOnAirList-items">
+                                <div class="col-md-5">『仮面ライダーセイバー』</div>
+                                <div class="col-md-3">11月20日</div>
+                                <div class="col-md-4">日曜日 19:00~20:30</div>
+                            </li>
+                            <li class="row tOnAirList-items">
+                                <div class="col-md-5">機動戦士ガンダム 水銀の魔女</div>
+                                <div class="col-md-3">11月20日</div>
+                                <div class="col-md-4">日曜日 18:00~18:30</div>
+                            </li>
+                            <li class="row tOnAirList-items">
+                                <div class="col-md-5">『仮面ライダーリバイス 深罪の三重奏』</div>
+                                <div class="col-md-3">11月7日</div>
+                                <div class="col-md-4">月曜日 19:00~19:30</div>
+                            </li>
+                            <li class="row tOnAirList-items">
+                                <div class="col-md-5">『仮面ライダーギーツ』</div>
+                                <div class="col-md-3">11月4日</div>
+                                <div class="col-md-4">金曜日 16:00~16:30</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tStory">
+                        <h2 class="content-title font-Oswald">STORY</h2>
+                        <ul class="tStoryList">
+                            <li class="row tStoryList-items">
+                                <div class="col-md-4">
+                                    <a href="story_spyxfamily.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/SpyFamily.jpg" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            スパイファミリー<br>
+                                            <small>人はみな誰にも見せぬ自分を<br>持っている</small>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="story_WitchFromMercury.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/WitchFromMercury.png" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            水銀の魔女
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="story_blacksun.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/Kamen_Rider_Black_Sun_logo.png" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            仮面ライダーblack sun 
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tStoryList-items">
+                                <div class="col-md-4">
+                                    <a href="story_kimetsunoyaiba.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/kimetsunoyaiba.jpg" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            「鬼滅の刃」無限列車編
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="story_ChainSawMan.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/ChainSawMan.jpg" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            『チェンソーマン』
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="story_THO_7_MAU.html" class="tStory-box">
+                                        <div>
+                                            <img src="image/Tho7mau.jpg" class="Story-thumb">
+                                        </div>
+                                        <div class="Story-title">
+                                            『Thỏ bảy màu』<br> DONATE cho Hoạt hình con Thỏ
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="tNews-more font-Oswald"><!--tái sử dụng class của more news-->
+                            <a href="#" class="LinkToMoreNews">MORE STORY</a><!--thêm link more story chỗ này-->
+                        </p>
+                    </div>
+                    <div id="tStaff">
+                        <h2 class="content-title font-Oswald">STAFF&CAST</h2>
+                        <ul class="tStaffList">
+                            <li class="tStaffList-items">
+                                <a href="https://twitter.com/egutakuya" class="tNews-link" target="_blank"><!--tái sử dụng code section News-->
+                                    <p class="tStaffList-history font-Oswald">
+                                        SPYxFAMILY<br><small>Voice Actor</small>
+                                    </p>
+                                    <img src="image/Takuya Eguchi (江口拓也).jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        Takuya Eguchi (江口拓也)    
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tStaffList-items">
+                                <a href="https://twitter.com/takeliciousindo" target="_blank" class="tNews-link">
+                                    <p class="tStaffList-history font-Oswald">
+                                        Rurouni Kenshin<br><small>Actor</small><br>
+                                        Kamen Rider Den-O<br><small>Actor</small>
+                                    </p>
+                                    <img src="image/Satoh Takeru (佐藤健).jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        Satoh Takeru (佐藤健)
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tStaffList-items">
+                                <a href="https://twitter.com/tanezakiatsumi" target="_blank" class="tNews-link">
+                                    <p class="tStaffList-history font-Oswald">
+                                        SPYxFAMILY<br><small>Voice Actor</small>
+                                    </p>
+                                    <img src="image/Atsumi Tanezaki (種崎敦美).png" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        Atsumi Tanezaki (種崎敦美)
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="tStaffList-items">
+                                <a href="https://twitter.com/kitoakari_1016" target="_blank" class="tNews-link">
+                                    <p class="tStaffList-history font-Oswald">
+                                        Kimetsu no Yaiba<br><small>Voice Actor</small>
+                                    </p>
+                                    <img src="image/Akari Kitō (鬼頭明里).jpg" class="title-img" >
+                                    <p class="tNewsList-title">
+                                        Akari Kitō (鬼頭明里)
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="tNews-more font-Oswald">
+                            <a href="#" class="LinkToMoreNews">MORE STAFF & CAST</a><!--thêm link more staff chỗ này-->
+                        </p>
+                    </div>
+                    <div id="tTrailers">
+                        <h2 class="content-title font-Oswald">TRAILERS</h2>
+                        <ul class="tTrailerList">
+                            <li class="row tTrailerList-items">
+                                <div class="col-md-4">
+                                    <a href="trailer_1.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer1.jfif" class="Trailer-thumb">
+                                        </div>
+                                        <div class="Trailer-title">
+                                            スパイファミリー<br> 
+                                            <small><夜帷> はじめての嫉妬」ビジュアル公開！</small> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="trailer_2.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer_2.jfif" class="Trailer-thumb">
+                                        </div>
+                                        <div class="Trailer-title">
+                                            水銀の魔女
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="trailer_3.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer3.jpg" class="Trailer-thumb">
+                                        </div>
+                                        <div class="Trailer-title">
+                                            BLEACH<br>千年血戦篇
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tTrailerList-items">
+                                <div class="col-md-4">
+                                    <a href="trailer_4.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer4.jfif" class="Trailer-thumb">
+                                        </div>
+                                        <div class="Trailer-title">
+                                            『チェンソーマン』
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="trailer_5.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer5.webp" class="Trailer-thumb">
+                                        </div>
+                                        <div class="Trailer-title">
+                                            アニメ「NieR:Automata」
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="trailer_6.html" class="tTrailer-box">
+                                        <div>
+                                            <img src="image/trailer6.webp" class="Trailer-thumb">
+                                        </div>
+                                       <div class="Trailer-title">
+                                            カラダ探し
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="tNews-more font-Oswald">
+                            <a href="#" class="LinkToMoreNews">MORE TRAILER</a><!--thêm link more trailers chỗ này-->
+                        </p>
+                    </div>
+                    <div id="tMusic">
+                        <h2 class="content-title font-Oswald">MUSIC</h2>
+                        <ul class="tMusicList">
+                            <li class="row tMusicList-items">
+                                <div class="col-md-6">
+                                    <a href="music1.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/music1.jpg" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            BUMP OF CHICKEN「SOUVENIR」<br> 
+                                            <small>第2クールオープニング主題歌</small> 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="music3.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/music2.webp" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            YAOSIBI 水銀の魔女
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tMusicList-items">
+                                <div class="col-md-6">
+                                    <a href="music3.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/music3.jpg" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            yama「色彩」
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="music5.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/music4.jpg" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            TVアニメ『SPY×FAMILY』オリジナル･サウンドトラック
+                                        </div>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tBlu">
+                        <h2 class="content-title font-Oswald">Blue-ray & DVD</h2>
+                        <ul class="tBluList">
+                            <li class="row tBluList-items">
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/bluray1.jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            スパイファミリー Vol.1 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/bluray2.jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            スパイファミリー Vol.2 
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/blueray3.jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            スパイファミリー Vol.3
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tTrailerList-items">
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/blueray4.jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            スパイファミリー Vol.4
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/blueray5.jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            スパイファミリー Vol.5
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="BluRay1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/blueray6.jpg" class="Blu-thumb">
+                                        </div>
+                                       <div class="Blu-title">
+                                        スパイファミリー Vol.6
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tSpecial">
+                        <h2 class="content-title font-Oswald">SPECIAL</h2>
+                        <ul class="tSpecialList"><!--tái sử dụng code Music-->
+                            <li class="row tMusicList-items">
+                                <div class="col-md-6">
+                                    <a href="BluRay1.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/special1.jpg" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            キャストオフィシャルコメント到着！
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="BluRay1.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/special2.webp" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            ATTACK OF TITAN
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tMusicList-items">
+                                <div class="col-md-6">
+                                    <a href="BluRay1.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/special3.JPG" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            ガンダムビルドファイターズ
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="BluRay1.html" class="tMusic-box">
+                                        <div>
+                                            <img src="image/special.jpg" class="Music-thumb">
+                                        </div>
+                                        <div class="Music-title">
+                                            『産直シアター 仮面ライダーリバイス』
+                                        </div>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tGoods">
+                        <h2 class="content-title font-Oswald">Goods</h2>
+                        <ul class="tGoodsList"><!--tái sử dụng code blu-ray-->
+                            <li class="row tBluList-items">
+                                <div class="col-md-3">
+                                    <a href="Good1.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (1).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            ミニステッカーセット<br>【2枚入り】(全6種)
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good2.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (2).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            A4クリアファイル<br>【2枚入り】
+
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good3.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (3).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            カーサイン (全2種)
+
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good4.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (4).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            アクリルスタンド(全6種)
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tBluList-items">
+                                <div class="col-md-3">
+                                    <a href="Good5.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (5).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            トートバッグ
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good6.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (6).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            コラボカフェオリジナルボールペン
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good7.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (7).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            ミニタオル (全2種)
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="Good8.html" class="tBlu-box">
+                                        <div>
+                                            <img src="image/goods (8).jpg" class="Blu-thumb">
+                                        </div>
+                                        <div class="Blu-title">
+                                            ポーチ(全2種)
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="tNews-more font-Oswald">
+                            <a href="#" class="LinkToMoreNews">MORE GOODS</a><!--thêm link more goods chỗ này-->
+                        </p>
+                    </div>
+                    <div id="tPodcast">
+                        <h2 class="content-title font-Oswald">PODCAST</h2>
+                        <ul class="tPodcastList">
+                            <li class="row tPodcast-items">
+                                <div class="col-md-6">
+                                    <a href="https://open.spotify.com/show/5vSDpbHdx2YaXQPWzLSFri?_branch_match_id=1072785800684943987&utm_source=Twitter&utm_campaign=podcastshow&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczLBnIqddMSczNzKgG%2FznOkHwAAAA%3D%3D" target="_blank" class="tPodcast-box">
+                                        <div>
+                                            <img src="image/podcast1.webp" class="Podcast-thumb">
+                                        </div>
+                                        <div class="Podcast-title">
+                                            『SPY×FAMILY』オペレーション〈ポッドキャスト〉
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="https://open.spotify.com/show/25LhAkJUPMppdhzgKL73QR?si=6fb7fd1148a14be4" target="_blank" class="tPodcast-box"><!--thêm link story ở đây-->
+                                        <div>
+                                            <img src="image/podcast2.jpg" class="Podcast-thumb">
+                                        </div>
+                                        <div class="Podcast-title">
+                                            WEBラジオ＆ポッドキャスト
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="row tPodcastList-items">
+                                <div class="col-md-6">
+                                    <a href="https://open.spotify.com/show/24s1gq2QNlYGwGLpGYYDuS?si=cbc0b1c2ba0d40d1" target="_blank" class="tPodcast-box"><!--thêm link story ở đây-->
+                                        <div>
+                                            <img src="image/pocast3.jpg" class="Podcast-thumb">
+                                        </div>
+                                        <div class="Podcast-title">
+                                            『チェンソーマン』
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                                
+                        </ul>
+                    </div>
+                    
+
+
+                    <footer class="footer">
+                        <p class="footer__logo">
+                            <a href="#"><img src="image/fv_logo.png" alt="SPYxFAMILY"></a>
+                        </p>
+                        <small class="footer__copyRight">©遠藤達哉/集英社・SPYxFAMILY製作委員会</small>
+                        <p class="footer__contact">
+                            <a href="#" target="_blank" style="color: black;">【 お問い合せ 】</a>
+                        </p>
+                        <ul class="shareLists">
+                            <li class="shareLists--tw">
+                                <a href="https://twitter.com/share?url=https://spy-family.net/&amp;text=TVアニメ『SPYxFAMILY』&amp;hashtags=" target="_blank">
+                                    <span class="hd">Twitter share</span>
+                                </a>
+                            </li>
+                            <li class="shareLists--fb">
+                                <a href="https://www.facebook.com/share.php?u=https://spy-family.net/" target="_blank">
+                                    <span class="hd">Facebook share</span>
+                                </a>
+                            </li>
+                            <li class="shareLists--line">
+                                <a href="https://line.me/R/msg/text/?TVアニメ『SPYxFAMILY』 https://spy-family.net/" target="_blank">
+                                    <span class="hd">LINE share</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="bnrLists">
+                            <li>
+                                <a href="https://www.tohostage.com/spy-family/" target="_blank"><img src="image/footer_bnr4.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://shonenjumpplus.com/" target="_blank"><img src="image/footer_bnr1.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.witstudio.co.jp/" target="_blank"><img src="image/footer_bnr2.jpg" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://cloverworks.co.jp/" target="_blank"><img src="image/footer_bnr3.jpg" alt=""></a>
+                            </li>
+                            </ul>
+                    </footer>
+
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+</body>
+</html>

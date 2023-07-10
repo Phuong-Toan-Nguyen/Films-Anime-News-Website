@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.container-fluid-config {
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    max-width: 100%;
+}
+
+.carousel-img{
+    width: 100vw;
+    height: 100vh;
+    margin: -15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    height: 100vh;
+    min-width: 200px;
+    position: sticky;/*chưa tối ưu hóa cho trình duyệt Internet Explorer*/
+    position: -webkit-sticky;/*tối ưu hóa safari*/
+    top: 0;
+    z-index: 1000;
+    background-color: #697d73;
+    transition: background-color 1s ease;
+    overflow-y: hidden;/*hidden phần menu background thừa*/
+}
+
+.Menulogo>img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.container-config{
+    padding-right: 18%;
+    padding-left: 18%;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.listHead{
+    line-height: 1.6;
+    white-space: nowrap;
+    display: block;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    right: 0;
+    left: auto;
+    transition: .75s;/*hiệu ứng hover chạy nhanh chậm chỗ này*/
+}
+
+.textMenu{
+    color: #000;
+}
+
+.listHead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: .25s;/*hiệu ứng hover đen chỗ này*/
+    z-index: -1;
+}
+
+.listHead:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.listHead:hover{
+    color: whitesmoke;
+    padding-left: 20px; 
+}
+
+@font-face {
+    src: url(font/Oswald/Oswald-VariableFont_wght.ttf);
+    font-family: Oswald;
+}
+
+.font-Oswald{
+    font-family: Oswald;
+    font-size: 17px;
+}
+
+.content{
+    
+    min-height: 100vh;
+    background-color: #8ea99b;
+    transition: background-color 1s ease;
+}
+
+.MenuBackground{
+    height: 50vh ;
+    background-image: url(menu_character/char1.png);
+    background-position: center top;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    mix-blend-mode: luminosity;
+    transition: background-image .5s ease;
+    margin-left: -6%;
+    margin-right: -5%;
+    margin-top: 15%;
+}
+
+.content-title{
+    font-weight: bold;
+    color: #8d0000;
+    font-size: 35px;
+    line-height: 1;
+    padding-top: 7%;
+    position: relative;
+}
+
+.tNewsList{
+    margin-top: 40px;
+}
+
+.tNewsList-items{
+    list-style-type: none;
+    position: relative;
+}
+
+.tNews-link{
+    border-top: 1px solid black;
+    text-decoration: none;
+    display: flex;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tNewsList-date{
+    color: #8d0000;
+    font-size: 16px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+.tNewsList-title{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.title-img{
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 150px;
+    margin-right: 50px;
+}
+
+.tNewsList-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 1%;
+    background-color: black;
+    transition: .25s;/*hiệu ứng hover đen chỗ này*/
+    z-index: -10;
+}
+
+.tNewsList-title:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.tNews-more{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.LinkToMoreNews{
+    background-color: #8d0000;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 20px;
+    padding: 4px 20px;
+    position: relative;
+    border-radius: 20px;
+    transition: .4s ease;
+}
+
+.LinkToMoreNews::before{
+    content: "";
+    background-color: #8d0000;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    transition: .3s ease;
+}
+
+.LinkToMoreNews::after{
+    content: "";
+    background-image: url(icon_circle.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    bottom: 0;
+    transition: .4s ease;
+    transition-delay: .4s;
+}
+
+.LinkToMoreNews:hover{
+    background-color: unset;
+    color: #8d0000;
+}
+
+.LinkToMoreNews:hover:before{
+    width: 0;
+}
+
+.LinkToMoreNews:hover::after{
+    left: -9px;
+}
+
+.tOnAirList{
+    margin-top: 40px;
+}
+
+.tOnAirList-items{
+    list-style-type: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tStoryList{
+    margin-top: 40px;
+}
+
+.tStoryList-items{
+    list-style-type: none;
+}
+
+.tStory-box{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    min-height: 300px;
+    padding: 10px;
+    transition: .4s ease;
+}
+
+.tStory-box:hover{
+    margin-top: -13px;
+}
+
+.Story-thumb{
+    border: 1px solid black;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    margin-left: -10px;
+}
+
+.Story-title{
+    text-align: center;
+    color: #8d0000;
+    top: 72%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+}
+
+.tStaffList{
+    margin-top: 40px;
+}
+
+.tStaffList-items{
+    list-style-type: none;
+    position: relative;
+}
+
+.tStaffList-history{
+    color: #8d0000;
+    font-size: 16px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.tTrailerList{
+    margin-top: 40px;
+}
+
+.tTrailerList-items{
+    list-style-type: none;
+}
+
+.tTrailer-box{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    min-height: 300px;
+    padding: 10px;
+    transition: .4s ease;
+}
+
+.tTrailer-box:hover{
+    margin-top: -13px;
+}
+
+.Trailer-thumb{
+    border: 1px solid black;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    margin-left: -10px;
+}
+
+.Trailer-title{
+    text-align: center;
+    color: #8d0000;
+    top: 72%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+}
+
+.tMusicList{
+    margin-top: 40px;
+}
+
+.tMusicList-items{
+    list-style-type: none;
+}
+
+.tMusic-box{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    min-height: 400px;
+    padding: 10px;
+    transition: .4s ease;
+}
+
+.Music-thumb{
+    border: 1px solid black;
+    width: 100%;
+    max-height: 300px;
+    margin-left: -10px;
+}
+
+.Music-title{
+    text-align: center;
+    color: #8d0000;
+    top: 80%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+}
+
+.tBluList{
+    margin-top: 40px;
+}
+
+.tBluList-items{
+    list-style-type: none;   
+}
+
+.tBlu-box{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    min-height: 500px;
+    transition: .4s ease;
+}
+
+
+.tBlu-box:hover{
+    margin-top: -13px;
+}
+
+.Blu-thumb{
+    border: 1px solid black;
+    width: 100%;
+    max-height: 400px;
+}
+
+.Blu-title{
+    text-align: center;
+    color: #8d0000;
+    top: 85%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+}
+
+.tSpecialList{
+    margin-top: 40px;   
+}
+
+.tGoodsList{
+    margin-top: 40px;   
+}
+
+.tPodcastList{
+    margin-top: 40px;   
+}
+
+
+.tPodcastList-items{
+    list-style-type: none;   
+}
+
+.tPodcast-box{
+    height: 600px;
+    display: block;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+.tPodcast-box:hover{
+    margin-top: -13px;
+}
+
+.Podcast-thumb{
+    border: 1px solid black;
+    width: 100%;
+    height: 500px;
+}
+
+.Podcast-title{
+    text-align: center;
+    color: #8d0000;
+    top: 90%;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+

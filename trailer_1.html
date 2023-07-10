@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BootStrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style_Branch.css">
+    <link rel="stylesheet" href="Css/styleFooter.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="BootStrap/js/bootstrap.js"></script>    
+</head> 
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Menu-->
+            <header class="menu col-md-2 col-sm-2"> 
+                <!--code đổi theme và background menu-->
+                <script>
+                    $(document).ready(function(){
+                    var theme = $(".menu");
+                    var themeContent = $(".content");
+                    var colorMenu = ['#ffc66b','#697d73'];
+                    var colorContent = ['#fcddab','#8ea99b'];
+                    const MenuImage = [
+                        'url("char1.png")',
+                        'url("char2.png")',
+                        'url("char3.png")',
+                        'url("char4.png")',
+                        'url("char5.png")',
+                        'url("char6.png")',
+                    ]
+                    
+                    var i = 0;
+                    
+                    function ChangeColor(){
+                        theme.css('background-color', colorMenu[i]);
+                        themeContent.css('background-color', colorContent[i]);
+                        i++;
+                        if(i>=colorMenu.length)
+                        i = 0;
+                        /*đổi màu theme*/
+                        var pickImage = MenuImage[ Math.floor(Math.random() * MenuImage.length) ];
+                        $(document).ready(function(){
+                            $(".MenuBackground").css("background-image",pickImage);/*đổi background menu ở đây*/
+                        });
+                       
+                    }
+                    setInterval(ChangeColor,20000);/*đổi thời gian chuyển theme ở đây*/
+                    
+                    })
+                </script>
+                <nav class="container-config">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <p class="Menulogo"><img src="image/fv_logo.png" alt="SPYxFAMILY spy family"></p>
+                        </div>
+                        <ul class="col-md-12 col-xs-12" style="list-style-type: none;">
+                            <li class="listHead font-Oswald">
+                                <a href="#tTop"><!--i wonder should i add a back to top button here ?-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tNews" class="listHead font-Oswald">NEWS</a>
+                            </li>
+                            <li >
+                                <a href="Do_An_Web.html#tOnAir" class="listHead font-Oswald">ON AIR</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tStory" class="listHead font-Oswald">STORY</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tStaff" class="listHead font-Oswald">STAFF&CAST</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tTrailers" class="listHead font-Oswald">TRAILERS</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tMusic" class="listHead font-Oswald">MUSIC</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tBlu"  class="listHead font-Oswald">Blu-ray & DVD</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tSpecial"  class="listHead font-Oswald">SPECIAL</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tGoods"  class="listHead font-Oswald">GOODS</a>
+                            </li>
+                            <li>
+                                <a href="Do_An_Web.html#tPodcast"  class="listHead font-Oswald">PODCAST</a>
+                            </li>
+                            <li>
+                                <a href="https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-882011-8"  class="listHead font-Oswald" target="_blank">COMICS</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/spyfamily_anime" target="_blank" class="listHead font-Oswald">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://page.line.me/188qqtda?openQrModal=true" target="_blank" class="listHead font-Oswald">LINE</a>                                
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/spy_family_official/" target="_blank" class="listHead font-Oswald">Instagram</a>  
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="MenuBackground"></div>
+
+            </header>
+
+            <!--Content-->
+            <div class="content col-md-10 col-sm-10 col-xs-12">
+
+                <div class="container">
+                    <h2 class="content-title">TRAILERS</h2>
+                    <iframe width="1200" height="630" src="https://www.youtube.com/embed/ofXigq9aIpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="Do_An_Web.html#tTrailers" class="content-title margin_top">BACK</a><br><br><br>
+                </div>
+
+                
+                <footer class="footer">
+                    <p class="footer__logo">
+                        <a href=""><img src="image/fv_logo.png" alt="SPYxFAMILY"></a>
+                    </p>
+                    <small class="footer__copyRight">©遠藤達哉/集英社・SPYxFAMILY製作委員会</small>
+                    <p class="footer__contact">
+                        <a href="" target="_blank">【 お問い合せ 】</a>
+                    </p>
+                    <ul class="shareLists">
+                        <li class="shareLists--tw">
+                            <a href="https://twitter.com/share?url=https://spy-family.net/&amp;text=TVアニメ『SPYxFAMILY』&amp;hashtags=" onclick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow">
+                                <span class="hd">Twitter share</span>
+                            </a>
+                        </li>
+                        <li class="shareLists--fb">
+                            <a href="https://www.facebook.com/share.php?u=https://spy-family.net/" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">
+                                <span class="hd">Facebook share</span>
+                            </a>
+                        </li>
+                        <li class="shareLists--line">
+                            <a href="https://line.me/R/msg/text/?TVアニメ『SPYxFAMILY』 https://spy-family.net/" onclick="window.open(encodeURI(decodeURI(this.href)), 'linewindow', 'width=550, height=520, personalbar=0,toolbar=0, scrollbars=1, resizable=1'); return false;" target="_blank">
+                                <span class="hd">LINE share</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="bnrLists">
+                        <li>
+                            <a href="https://www.tohostage.com/spy-family/" target="_blank"><img src="image/footer_bnr4.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://shonenjumpplus.com/" target="_blank"><img src="image/footer_bnr1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://www.witstudio.co.jp/" target="_blank"><img src="image/footer_bnr2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://cloverworks.co.jp/" target="_blank"><img src="image/footer_bnr3.jpg" alt=""></a>
+                        </li>
+                        </ul>
+                  </footer>
+            </div>
+  
+</body>
+</html>

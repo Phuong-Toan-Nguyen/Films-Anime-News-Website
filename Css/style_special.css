@@ -1,0 +1,14 @@
+.icondlLists {
+    display: flex;
+    justify-content: space-between;
+}
+.icondlLists>li {
+    margin: 0 6px;
+}
+.icondlLists>li>a>img{
+    width: 100%;
+    height: 100%;
+}
+.para{
+    padding:40px 0 0;
+}

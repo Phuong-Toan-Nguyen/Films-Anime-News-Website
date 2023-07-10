@@ -1,0 +1,48 @@
+
+.contentDIV {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2.content_item {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.content_item_date {
+    color: #8d0000;
+    font-size: 16px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+.content_item_text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content_text {
+    padding: 40px 0;
+    position: relative;
+}
+.content_text p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.content_text p.profile {
+    border: 5px solid #000;
+    padding: 50px;
+}
+.content_text p.comment {
+    border: 5px solid #8d0000;
+    padding: 50px;
+}
+.content_text .commentC {
+    color: #8d0000;
+}

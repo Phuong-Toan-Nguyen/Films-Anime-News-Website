@@ -1,0 +1,35 @@
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.content_item_h2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8d0000;
+    font-size: 30px;
+}
+.containerOK{
+    width: 100%;
+    height: 100%;
+    padding: 100px 20%;
+    background-color: #8ea99b;
+
+}
+.contentDIV{
+    width: 100%;
+    margin: auto;
+}
+.contentH1{
+    color: #8d0000;
+    font-size: 40px;
+    white-space: nowrap;
+    font-weight: 900;
+}
+.para{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
